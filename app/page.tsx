@@ -4,7 +4,8 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main className="relative w-full">
-      <div className="h-screen flex items-center justify-center px-4">
+      <div className="h-screen flex flex-col items-center justify-center px-4">
+        <p className="text-sm mb-4">Updated - April 15</p>
         <Image
           src="/images/mainpage.jpeg"
           alt="White architectural model showing a minimalist structural composition"
