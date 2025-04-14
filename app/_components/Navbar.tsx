@@ -42,7 +42,7 @@ export default function Navbar() {
               About
             </Link>
             <Link href="/work" className="text-2xl font-light hover:opacity-60 transition-opacity">
-              Work
+              Works
             </Link>
             <Link href="/contact" className="text-2xl font-light hover:opacity-60 transition-opacity">
               Contact
