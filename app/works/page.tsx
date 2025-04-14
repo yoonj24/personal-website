@@ -39,7 +39,7 @@ const architectureProjects = [
   }
 ]
 
-export default function Work() {
+export default function Works() {
   return (
     <div className="container mx-auto px-4 py-16">
       <h1 className="text-4xl font-bold mb-12">Works</h1>
