@@ -2,11 +2,13 @@
 
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 // Navigation component with solid background - Updated April 15
 export default function Navbar() {
   const [visible, setVisible] = useState(true)
   const [prevScrollPos, setPrevScrollPos] = useState(0)
+  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,10 +40,13 @@ export default function Navbar() {
             Yoonjae Chang
           </Link>
           <div className="flex justify-between w-full">
-            <Link href="/about" className="text-2xl font-light hover:opacity-60 transition-opacity">
+            <Link href="/about" className={`${router.pathname === '/about' ? 'text-gray-900 dark:text-white' : 'text-gray-600 dark:text-gray-300'} hover:text-gray-900 dark:hover:text-white px-3 py-2 text-sm font-medium`}>
               About
             </Link>
-            <Link href="/work" className="text-2xl font-light hover:opacity-60 transition-opacity">
+            <Link href="/experiences" className={`${router.pathname === '/experiences' ? 'text-gray-900 dark:text-white' : 'text-gray-600 dark:text-gray-300'} hover:text-gray-900 dark:hover:text-white px-3 py-2 text-sm font-medium`}>
+              Experiences
+            </Link>
+            <Link href="/works" className={`${router.pathname === '/works' ? 'text-gray-900 dark:text-white' : 'text-gray-600 dark:text-gray-300'} hover:text-gray-900 dark:hover:text-white px-3 py-2 text-sm font-medium`}>
               Works
             </Link>
             <Link href="/contact" className="text-2xl font-light hover:opacity-60 transition-opacity">
