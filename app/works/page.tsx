@@ -1,5 +1,8 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect } from 'react'
 
 const architectureProjects = [
   {
@@ -40,21 +43,30 @@ const architectureProjects = [
 ]
 
 export default function Works() {
+  useEffect(() => {
+    const elements = document.querySelectorAll('.animate-on-mount')
+    elements.forEach((element, index) => {
+      setTimeout(() => {
+        element.classList.add('opacity-100', 'translate-y-0')
+      }, index * 100) // Faster stagger for grid items
+    })
+  }, [])
+
   return (
     <div className="container mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold mb-12">Works</h1>
+      <h1 className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-4xl font-bold mb-12">Works</h1>
 
       {/* Architecture Section */}
       <section className="mb-20">
-        <h2 className="text-2xl font-semibold mb-8">Architecture</h2>
+        <h2 className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-2xl font-semibold mb-8">Architecture</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {architectureProjects.map((project) => (
-            <div key={project.id} className="relative aspect-square group">
+            <div key={project.id} className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out relative aspect-square group">
               <Image
                 src={project.image}
                 alt={`Architecture project ${project.id}`}
                 fill
-                className="object-cover"
+                className="object-cover transform transition-transform duration-500 group-hover:scale-[1.02]"
                 sizes="(max-width: 768px) 50vw, 25vw"
               />
               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
@@ -69,26 +81,26 @@ export default function Works() {
 
       {/* Literary Works Section */}
       <section className="mb-20">
-        <h2 className="text-2xl font-semibold mb-8">Literary Works</h2>
-        <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg">
-          <h3 className="text-xl font-semibold mb-4">시집 '나의 유일한 독자, 너에게'</h3>
-          <p className="text-gray-600 dark:text-gray-300 mb-4">2023</p>
+        <h2 className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-2xl font-semibold mb-8">Literary Works</h2>
+        <div className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow">
+          <h3 className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-xl font-semibold mb-4">시집 '나의 유일한 독자, 너에게'</h3>
+          <p className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-gray-600 dark:text-gray-300 mb-4">2023</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="relative aspect-square group">
+            <div className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out relative aspect-square group">
               <Image
                 src="/images/works_literary_1.jpg"
                 alt="Literary work 1"
                 fill
-                className="object-cover"
+                className="object-cover transform transition-transform duration-500 group-hover:scale-[1.02]"
                 sizes="(max-width: 768px) 50vw, 25vw"
               />
             </div>
-            <div className="relative aspect-square group">
+            <div className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out relative aspect-square group">
               <Image
                 src="/images/works_literary_2.jpg"
                 alt="Literary work 2"
                 fill
-                className="object-cover"
+                className="object-cover transform transition-transform duration-500 group-hover:scale-[1.02]"
                 sizes="(max-width: 768px) 50vw, 25vw"
               />
             </div>
