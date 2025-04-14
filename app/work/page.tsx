@@ -73,13 +73,13 @@ export default function Work() {
         <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg">
           <h3 className="text-xl font-semibold mb-4">시집 '나의 유일한 독자, 너에게'</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-4">2023</p>
-          <div className="grid grid-cols-2 gap-4 mb-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square group">
               <Image
                 src="/images/works_literary_1.jpg"
                 alt="Literary work 1"
                 fill
-                className="object-cover rounded-lg"
+                className="object-cover"
                 sizes="(max-width: 768px) 50vw, 25vw"
               />
             </div>
@@ -88,20 +88,10 @@ export default function Work() {
                 src="/images/works_literary_2.jpg"
                 alt="Literary work 2"
                 fill
-                className="object-cover rounded-lg"
+                className="object-cover"
                 sizes="(max-width: 768px) 50vw, 25vw"
               />
             </div>
-          </div>
-          <div className="prose dark:prose-invert max-w-none">
-            <p className="text-gray-600 dark:text-gray-300 whitespace-pre-line text-center">
-              그런 순간들이 있다
-              낮게 비추는 오후의 햇살에
-              세상이 멈추어 낯설어지는
-              그리하여 가슴 속에 어느새 가득찬 것을
-              내던지지 않고서는 견딜 수가 없는
-              그런 순간들이 있다.
-            </p>
           </div>
         </div>
       </section>
