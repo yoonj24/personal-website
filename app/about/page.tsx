@@ -29,6 +29,24 @@ export default function About() {
           </div>
         </div>
 
+        <h2 className="text-2xl font-bold mt-12 mb-6">Experiences</h2>
+        <div className="space-y-6">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+            <h3 className="text-xl font-semibold mb-2">CES 2025</h3>
+            <p className="text-gray-600 dark:text-gray-300">Las Vegas, JAN 2025</p>
+          </div>
+          
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+            <h3 className="text-xl font-semibold mb-2">SR & SNU-in</h3>
+            <p className="text-gray-600 dark:text-gray-300">Malaysia, JAN 2024</p>
+          </div>
+          
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+            <h3 className="text-xl font-semibold mb-2">SSBM</h3>
+            <p className="text-gray-600 dark:text-gray-300">SEP 2023 - AUG 2024</p>
+          </div>
+        </div>
+
         <h2 className="text-2xl font-bold mt-12 mb-6">Languages</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
@@ -42,7 +60,7 @@ export default function About() {
         </div>
 
         <h2 className="text-2xl font-bold mt-12 mb-6">Skills & Tools</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow">
             <h3 className="font-semibold mb-4 text-lg">Design</h3>
             <div className="space-y-4 text-gray-600 dark:text-gray-300">
