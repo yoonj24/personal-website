@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 const architectureProjects = [
   {
@@ -43,6 +43,8 @@ const architectureProjects = [
 ]
 
 export default function Works() {
+  const [showSecondImage, setShowSecondImage] = useState(false)
+
   useEffect(() => {
     const elements = document.querySelectorAll('.animate-on-mount')
     elements.forEach((element, index) => {
@@ -86,7 +88,10 @@ export default function Works() {
           <h3 className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-xl font-semibold mb-4">시집 '나의 유일한 독자, 너에게'</h3>
           <p className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-gray-600 dark:text-gray-300 mb-4">2023</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out relative aspect-square group">
+            <div 
+              className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out relative aspect-square group cursor-pointer"
+              onClick={() => setShowSecondImage(true)}
+            >
               <Image
                 src="/images/works_literary_1.jpg"
                 alt="Literary work 1"
@@ -95,15 +100,25 @@ export default function Works() {
                 sizes="(max-width: 768px) 50vw, 25vw"
               />
             </div>
-            <div className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out relative aspect-square group">
-              <Image
-                src="/images/works_literary_2.jpg"
-                alt="Literary work 2"
-                fill
-                className="object-cover transform transition-transform duration-500 group-hover:scale-[1.02]"
-                sizes="(max-width: 768px) 50vw, 25vw"
-              />
-            </div>
+            {showSecondImage && (
+              <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+                <div className="relative w-full max-w-4xl mx-4">
+                  <button 
+                    className="absolute top-4 right-4 text-white text-2xl hover:text-gray-300"
+                    onClick={() => setShowSecondImage(false)}
+                  >
+                    ×
+                  </button>
+                  <Image
+                    src="/images/works_literary_2.jpg"
+                    alt="Literary work 2"
+                    width={1200}
+                    height={800}
+                    className="w-full h-auto rounded-lg"
+                  />
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>

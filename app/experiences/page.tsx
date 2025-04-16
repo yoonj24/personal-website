@@ -1,70 +1,47 @@
-import React from 'react'
+'use client'
+
+import { useEffect } from 'react'
 
 export default function Experiences() {
+  useEffect(() => {
+    const elements = document.querySelectorAll('.animate-on-mount')
+    elements.forEach((element, index) => {
+      setTimeout(() => {
+        element.classList.add('opacity-100', 'translate-y-0')
+      }, index * 200)
+    })
+  }, [])
+
   return (
     <div className="container mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold mb-12">Experiences</h1>
-
-      {/* Activities & Experience Section */}
-      <section className="mb-20">
-        <h2 className="text-2xl font-semibold mb-8">Activities & Experience</h2>
-        <div className="space-y-8">
-          {/* CES 2025 Experience */}
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg">
-            <div className="flex justify-between items-start mb-4">
-              <div>
-                <h3 className="text-xl font-semibold">CES 2025</h3>
-                <p className="text-gray-600 dark:text-gray-300 mt-2">Booth Staff - SNU Pavilion</p>
-              </div>
-              <span className="text-sm text-gray-500 dark:text-gray-400">Jan 2025</span>
+      <h1 className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-4xl font-bold mb-12">
+        Experiences
+      </h1>
+      
+      <div className="max-w-2xl mx-auto">
+        <ul className="space-y-6">
+          <li className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out">
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+              <h2 className="text-xl font-semibold mb-2">CES 2025</h2>
+              <p className="text-gray-600 dark:text-gray-300">Las Vegas, JAN 2025</p>
             </div>
-            <p className="text-gray-600 dark:text-gray-300">
-              Served as booth staff at the SNU Pavilion, specifically representing INTEGRA Semiconductor booth at CES 2025.
-            </p>
-          </div>
-
-          {/* Volunteer Work */}
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg">
-            <div className="flex justify-between items-start mb-4">
-              <div>
-                <h3 className="text-xl font-semibold">Seoul National University Social Responsibility</h3>
-                <p className="text-gray-600 dark:text-gray-300 mt-2">Student Volunteer - Sabah, Malaysia</p>
-              </div>
-              <span className="text-sm text-gray-500 dark:text-gray-400">Jan 2024</span>
+          </li>
+          
+          <li className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out">
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+              <h2 className="text-xl font-semibold mb-2">SR & SNU-in</h2>
+              <p className="text-gray-600 dark:text-gray-300">Malaysia, JAN 2024</p>
             </div>
-            <p className="text-gray-600 dark:text-gray-300">
-              • Education program for stilt village children<br />
-              • Seaside Plogging<br />
-              • Environment Campaign
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Academic Activities Section */}
-      <section className="mb-20">
-        <h2 className="text-2xl font-semibold mb-8">Academic Activities</h2>
-        <div className="space-y-8">
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg">
-            <div className="flex justify-between items-start mb-4">
-              <div>
-                <h3 className="text-xl font-semibold">Society for Sustainable Business Management (SSBM)</h3>
-                <p className="text-gray-600 dark:text-gray-300 mt-2">서울대학교 지속가능경영학회</p>
-              </div>
+          </li>
+          
+          <li className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out">
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+              <h2 className="text-xl font-semibold mb-2">SSBM</h2>
+              <p className="text-gray-600 dark:text-gray-300">SEP 2023 - AUG 2024</p>
             </div>
-            <div className="space-y-4">
-              <div className="flex justify-between items-start">
-                <p className="text-gray-600 dark:text-gray-300">President</p>
-                <span className="text-sm text-gray-500 dark:text-gray-400">Feb 2024 - Aug 2024</span>
-              </div>
-              <div className="flex justify-between items-start">
-                <p className="text-gray-600 dark:text-gray-300">General Member</p>
-                <span className="text-sm text-gray-500 dark:text-gray-400">Sep 2023 - Jan 2024</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          </li>
+        </ul>
+      </div>
     </div>
   )
 } 
