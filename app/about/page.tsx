@@ -14,10 +14,10 @@ export default function About() {
           <div className="border-l-4 border-gray-800 dark:border-gray-800 pl-4">
             <h3 className="text-xl font-semibold">Seoul National University</h3>
             <p className="text-gray-600 dark:text-gray-300 mt-1">2020 - Present</p>
-            <ul className="mt-2 space-y-1 text-gray-600 dark:text-gray-300">
-              <li>• Major in Business Administration</li>
-              <li>• Minor in Architecture</li>
-            </ul>
+            <div className="mt-2 space-y-1 text-gray-600 dark:text-gray-300">
+              <p>Major in Business Administration</p>
+              <p>Minor in Architecture</p>
+            </div>
           </div>
 
           <div className="border-l-4 border-gray-800 dark:border-gray-800 pl-4">
@@ -67,17 +67,17 @@ export default function About() {
               <div>
                 <p className="font-medium mb-2">2D</p>
                 <div className="space-y-2 ml-4">
-                  <p>• Adobe Illustrator</p>
-                  <p>• Adobe Photoshop</p>
-                  <p>• Adobe InDesign</p>
-                  <p>• AutoCAD</p>
+                  <p>Adobe Illustrator</p>
+                  <p>Adobe Photoshop</p>
+                  <p>Adobe InDesign</p>
+                  <p>AutoCAD</p>
                 </div>
               </div>
               <div>
                 <p className="font-medium mb-2">3D</p>
                 <div className="space-y-2 ml-4">
-                  <p>• Rhino3D</p>
-                  <p>• V-Ray</p>
+                  <p>Rhino3D</p>
+                  <p>V-Ray</p>
                 </div>
               </div>
             </div>
@@ -86,15 +86,15 @@ export default function About() {
           <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow">
             <h3 className="font-semibold mb-4 text-lg">Business</h3>
             <div className="space-y-2 text-gray-600 dark:text-gray-300">
-              <p>• Equity Valuation</p>
-              <p>• Strategic Business Analysis</p>
+              <p>Equity Valuation</p>
+              <p>Strategic Business Analysis</p>
             </div>
           </div>
 
           <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow">
             <h3 className="font-semibold mb-4 text-lg">Development</h3>
             <div className="space-y-2 text-gray-600 dark:text-gray-300">
-              <p>• Python</p>
+              <p>Python</p>
             </div>
           </div>
         </div>
