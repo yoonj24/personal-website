@@ -12,7 +12,7 @@ export default function About() {
         <h2 className="text-xl font-semibold mt-12 mb-6">Education</h2>
         <div className="space-y-6">
           <div className="border-l-4 border-gray-800 dark:border-gray-800 pl-4">
-            <h3 className="text-xl font-medium mb-1">Seoul National University</h3>
+            <h3 className="text-lg font-medium mb-1">Seoul National University</h3>
             <p className="text-gray-600 dark:text-gray-300 font-light">2020 - Present</p>
             <div className="mt-2 space-y-1 text-gray-600 dark:text-gray-300 font-light">
               <p>Major in Business Administration</p>
@@ -21,7 +21,7 @@ export default function About() {
           </div>
 
           <div className="border-l-4 border-gray-800 dark:border-gray-800 pl-4">
-            <h3 className="text-xl font-medium mb-1">Daewon Foreign Language High School</h3>
+            <h3 className="text-lg font-medium mb-1">Daewon Foreign Language High School</h3>
             <p className="text-gray-600 dark:text-gray-300 font-light">2017 - 2019</p>
             <p className="mt-2 text-gray-600 dark:text-gray-300 font-light">
               English Major
@@ -32,17 +32,17 @@ export default function About() {
         <h2 className="text-xl font-semibold mt-12 mb-6">Experiences</h2>
         <div className="space-y-6">
           <div className="border-l-4 border-gray-800 dark:border-gray-800 pl-4">
-            <h3 className="text-xl font-medium mb-1">CES 2025</h3>
+            <h3 className="text-lg font-medium mb-1">CES 2025</h3>
             <p className="text-gray-600 dark:text-gray-300 font-light">Las Vegas, Jan 2025</p>
           </div>
           
           <div className="border-l-4 border-gray-800 dark:border-gray-800 pl-4">
-            <h3 className="text-xl font-medium mb-1">SR & SNU-in</h3>
+            <h3 className="text-lg font-medium mb-1">SR & SNU-in</h3>
             <p className="text-gray-600 dark:text-gray-300 font-light">Malaysia, Jan 2024</p>
           </div>
           
           <div className="border-l-4 border-gray-800 dark:border-gray-800 pl-4">
-            <h3 className="text-xl font-medium mb-1">SSBM</h3>
+            <h3 className="text-lg font-medium mb-1">SSBM</h3>
             <p className="text-gray-600 dark:text-gray-300 font-light">Sep 2023 - Aug 2024</p>
           </div>
         </div>
