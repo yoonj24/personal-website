@@ -62,7 +62,7 @@ export default function About() {
             <h3 className="font-medium mb-4 text-lg">Design</h3>
             <div className="space-y-4 text-gray-600 dark:text-gray-300">
               <div>
-                <p className="font-normal mb-2">2D</p>
+                <p className="font-medium mb-2">2D</p>
                 <div className="space-y-2 ml-4 font-light">
                   <p>Adobe Illustrator</p>
                   <p>Adobe Photoshop</p>
@@ -71,7 +71,7 @@ export default function About() {
                 </div>
               </div>
               <div>
-                <p className="font-normal mb-2">3D</p>
+                <p className="font-medium mb-2">3D</p>
                 <div className="space-y-2 ml-4 font-light">
                   <p>Rhino3D</p>
                   <p>V-Ray</p>
