@@ -37,13 +37,18 @@ export default function About() {
           </div>
           
           <div className="border-l-4 border-gray-800 dark:border-gray-800 pl-4">
-            <h3 className="text-lg font-medium mb-1">SR & SNU-in</h3>
+            <h3 className="text-lg font-medium mb-1">SWP</h3>
             <p className="text-gray-600 dark:text-gray-300 font-light">Malaysia, Jan 2024</p>
           </div>
           
           <div className="border-l-4 border-gray-800 dark:border-gray-800 pl-4">
             <h3 className="text-lg font-medium mb-1">SSBM</h3>
             <p className="text-gray-600 dark:text-gray-300 font-light">Sep 2023 - Aug 2024</p>
+          </div>
+
+          <div className="border-l-4 border-gray-800 dark:border-gray-800 pl-4">
+            <h3 className="text-lg font-medium mb-1">ROKAF</h3>
+            <p className="text-gray-600 dark:text-gray-300 font-light">Sep 2021 - June 2023</p>
           </div>
         </div>
 
