@@ -37,7 +37,7 @@ export default function About() {
           </div>
           
           <div className="border-l-4 border-gray-800 dark:border-gray-800 pl-4">
-            <h3 className="text-lg font-medium mb-1">SWP</h3>
+            <h3 className="text-lg font-medium mb-1">SR&SWP</h3>
             <p className="text-gray-600 dark:text-gray-300 font-light">Malaysia, Jan 2024</p>
           </div>
           
