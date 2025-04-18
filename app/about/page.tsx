@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div className="container mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold mb-8">About Me</h1>
+      <h1 className="text-4xl font-bold mb-8">About</h1>
       
       <div className="max-w-3xl">
         <p className="text-lg font-light mb-8">
