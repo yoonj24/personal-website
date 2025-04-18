@@ -63,7 +63,7 @@ export default function Works() {
         <h2 className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-2xl font-semibold mb-8">Architecture</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {architectureProjects.map((project) => (
-            <div key={project.id} className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out relative aspect-square group">
+            <div key={project.id} className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out relative aspect-square group cursor-pointer">
               <Image
                 src={project.image}
                 alt={`Architecture project ${project.id}`}
@@ -72,7 +72,7 @@ export default function Works() {
                 sizes="(max-width: 768px) 50vw, 25vw"
               />
               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
-                <p className="text-white text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-white text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-light">
                   {project.caption}
                 </p>
               </div>
@@ -85,8 +85,8 @@ export default function Works() {
       <section className="mb-20">
         <h2 className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-2xl font-semibold mb-8">Literary Works</h2>
         <div className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow">
-          <h3 className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-xl font-semibold mb-4">시집 '나의 유일한 독자, 너에게'</h3>
-          <p className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-gray-600 dark:text-gray-300 mb-4">2023</p>
+          <h3 className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-xl font-medium mb-4">시집 '나의 유일한 독자, 너에게'</h3>
+          <p className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-gray-600 dark:text-gray-300 mb-4 font-light">2023</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div 
               className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out relative aspect-square group cursor-pointer"
@@ -101,13 +101,10 @@ export default function Works() {
               />
             </div>
             {showSecondImage && (
-              <div 
-                className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
-                onClick={() => setShowSecondImage(false)}
-              >
+              <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
                 <div className="relative w-full max-w-xl mx-4">
                   <button 
-                    className="absolute top-4 right-4 text-white text-2xl hover:text-gray-300"
+                    className="absolute top-4 right-4 text-white text-2xl hover:text-gray-300 font-light"
                     onClick={(e) => {
                       e.stopPropagation();
                       setShowSecondImage(false);

@@ -35,18 +35,18 @@ export default function Navbar() {
       visible ? 'translate-y-0' : '-translate-y-full'
     }`}>
       <div className="max-w-screen-2xl mx-auto px-8 py-4">
-        <div className="flex flex-col space-y-4">
-          <Link href="/" className="text-2xl font-bold tracking-tight">
-            Yoonjae Chang
+        <div className="flex flex-col items-center space-y-4">
+          <Link href="/" className="text-2xl font-bold tracking-tight lowercase">
+            yoonjae chang
           </Link>
-          <div className="flex justify-between w-full">
-            <Link href="/about" className={`${pathname === '/about' ? 'text-gray-900 dark:text-white' : 'text-gray-600 dark:text-gray-300'} hover:text-gray-900 dark:hover:text-white px-3 py-2 text-sm font-medium`}>
+          <div className="flex justify-center space-x-12">
+            <Link href="/about" className={`${pathname === '/about' ? 'text-gray-900 dark:text-white' : 'text-gray-600 dark:text-gray-300'} hover:text-gray-900 dark:hover:text-white px-3 py-2 text-lg font-bold tracking-wide`}>
               About
             </Link>
-            <Link href="/works" className={`${pathname === '/works' ? 'text-gray-900 dark:text-white' : 'text-gray-600 dark:text-gray-300'} hover:text-gray-900 dark:hover:text-white px-3 py-2 text-sm font-medium`}>
+            <Link href="/works" className={`${pathname === '/works' ? 'text-gray-900 dark:text-white' : 'text-gray-600 dark:text-gray-300'} hover:text-gray-900 dark:hover:text-white px-3 py-2 text-lg font-bold tracking-wide`}>
               Works
             </Link>
-            <Link href="/contact" className={`${pathname === '/contact' ? 'text-gray-900 dark:text-white' : 'text-gray-600 dark:text-gray-300'} hover:text-gray-900 dark:hover:text-white px-3 py-2 text-sm font-medium`}>
+            <Link href="/contact" className={`${pathname === '/contact' ? 'text-gray-900 dark:text-white' : 'text-gray-600 dark:text-gray-300'} hover:text-gray-900 dark:hover:text-white px-3 py-2 text-lg font-bold tracking-wide`}>
               Contact
             </Link>
           </div>
