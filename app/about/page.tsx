@@ -24,7 +24,7 @@ export default function About() {
             <h3 className="text-xl font-medium mb-1">Daewon Foreign Language High School</h3>
             <p className="text-gray-600 dark:text-gray-300 font-light">2017 - 2019</p>
             <p className="mt-2 text-gray-600 dark:text-gray-300 font-light">
-              English (Chinese) Major
+              English Major
             </p>
           </div>
         </div>
@@ -32,18 +32,15 @@ export default function About() {
         <h2 className="text-2xl font-semibold mt-12 mb-6">Experiences</h2>
         <div className="space-y-6">
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-            <h3 className="text-xl font-medium mb-2">CES 2025</h3>
-            <p className="text-gray-600 dark:text-gray-300 font-light">Las Vegas, JAN 2025</p>
+            <h3 className="text-xl font-medium">CES 2025 <span className="text-gray-600 dark:text-gray-300 font-light">Las Vegas, Jan 2025</span></h3>
           </div>
           
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-            <h3 className="text-xl font-medium mb-2">SR & SNU-in</h3>
-            <p className="text-gray-600 dark:text-gray-300 font-light">Malaysia, JAN 2024</p>
+            <h3 className="text-xl font-medium">SR & SNU-in <span className="text-gray-600 dark:text-gray-300 font-light">Malaysia, Jan 2024</span></h3>
           </div>
           
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-            <h3 className="text-xl font-medium mb-2">SSBM</h3>
-            <p className="text-gray-600 dark:text-gray-300 font-light">SEP 2023 - AUG 2024</p>
+            <h3 className="text-xl font-medium">SSBM <span className="text-gray-600 dark:text-gray-300 font-light">Sep 2023 - Aug 2024</span></h3>
           </div>
         </div>
 
