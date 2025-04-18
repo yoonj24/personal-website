@@ -56,11 +56,11 @@ export default function Works() {
 
   return (
     <div className="container mx-auto px-4 py-16">
-      <h1 className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-4xl font-bold mb-12">Works</h1>
+      <h1 className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-xl font-bold mb-12">Works</h1>
 
       {/* Architecture Section */}
       <section className="mb-20">
-        <h2 className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-2xl font-semibold mb-8">Architecture</h2>
+        <h2 className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-xl font-semibold mb-8">Architecture</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {architectureProjects.map((project) => (
             <div key={project.id} className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out relative aspect-square group cursor-pointer">
@@ -83,7 +83,7 @@ export default function Works() {
 
       {/* Literary Works Section */}
       <section className="mb-20">
-        <h2 className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-2xl font-semibold mb-8">Literary Works</h2>
+        <h2 className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-xl font-semibold mb-8">Literary Works</h2>
         <div className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow">
           <h3 className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-xl font-medium mb-4">시집 '나의 유일한 독자, 너에게'</h3>
           <p className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-gray-600 dark:text-gray-300 mb-4 font-light">2023</p>

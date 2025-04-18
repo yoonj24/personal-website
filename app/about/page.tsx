@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div className="container mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold mb-8">About</h1>
+      <h1 className="text-xl font-bold mb-8">About</h1>
       
       <div className="max-w-3xl">
         <p className="text-lg font-light mb-8">
@@ -9,7 +9,7 @@ export default function About() {
           I'm passionate about combining business strategy with architectural design thinking to create innovative solutions.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-12 mb-6">Education</h2>
+        <h2 className="text-xl font-semibold mt-12 mb-6">Education</h2>
         <div className="space-y-6">
           <div className="border-l-4 border-gray-800 dark:border-gray-800 pl-4">
             <h3 className="text-xl font-medium mb-1">Seoul National University</h3>
@@ -29,22 +29,25 @@ export default function About() {
           </div>
         </div>
 
-        <h2 className="text-2xl font-semibold mt-12 mb-6">Experiences</h2>
+        <h2 className="text-xl font-semibold mt-12 mb-6">Experiences</h2>
         <div className="space-y-6">
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-            <h3 className="text-xl font-medium">CES 2025 <span className="text-gray-600 dark:text-gray-300 font-light">Las Vegas, Jan 2025</span></h3>
+          <div className="border-l-4 border-gray-800 dark:border-gray-800 pl-4">
+            <h3 className="text-xl font-medium mb-1">CES 2025</h3>
+            <p className="text-gray-600 dark:text-gray-300 font-light">Las Vegas, Jan 2025</p>
           </div>
           
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-            <h3 className="text-xl font-medium">SR & SNU-in <span className="text-gray-600 dark:text-gray-300 font-light">Malaysia, Jan 2024</span></h3>
+          <div className="border-l-4 border-gray-800 dark:border-gray-800 pl-4">
+            <h3 className="text-xl font-medium mb-1">SR & SNU-in</h3>
+            <p className="text-gray-600 dark:text-gray-300 font-light">Malaysia, Jan 2024</p>
           </div>
           
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-            <h3 className="text-xl font-medium">SSBM <span className="text-gray-600 dark:text-gray-300 font-light">Sep 2023 - Aug 2024</span></h3>
+          <div className="border-l-4 border-gray-800 dark:border-gray-800 pl-4">
+            <h3 className="text-xl font-medium mb-1">SSBM</h3>
+            <p className="text-gray-600 dark:text-gray-300 font-light">Sep 2023 - Aug 2024</p>
           </div>
         </div>
 
-        <h2 className="text-2xl font-semibold mt-12 mb-6">Languages</h2>
+        <h2 className="text-xl font-semibold mt-12 mb-6">Languages</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
             <h3 className="font-medium mb-2">Korean</h3>
@@ -56,7 +59,7 @@ export default function About() {
           </div>
         </div>
 
-        <h2 className="text-2xl font-semibold mt-12 mb-6">Skills & Tools</h2>
+        <h2 className="text-xl font-semibold mt-12 mb-6">Skills & Tools</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow">
             <h3 className="font-medium mb-4 text-lg">Design</h3>

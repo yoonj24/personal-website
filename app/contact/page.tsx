@@ -14,7 +14,7 @@ export default function Contact() {
 
   return (
     <div className="container mx-auto px-4 py-16">
-      <h1 className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-4xl font-bold mb-8">
+      <h1 className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out text-xl font-bold mb-8">
         Contact
       </h1>
       
@@ -26,7 +26,7 @@ export default function Contact() {
           
           <div className="space-y-8">
             <div className="animate-on-mount opacity-0 translate-y-4 transition-all duration-500 ease-out transform hover:scale-[1.01] transition-transform">
-              <h3 className="text-lg font-medium mb-2">Email</h3>
+              <h3 className="text-xl font-medium mb-2">Email</h3>
               <a 
                 href="mailto:yoonj24k@gmail.com"
                 className="text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors font-light"
